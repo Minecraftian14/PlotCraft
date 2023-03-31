@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="GraphAxisDescriber">
+        <attr name="descBackgroundColor" format="color" />
+        <attr name="descTitle" format="string" />
+        <attr name="descTitleFontSize" format="float" />
+        <attr name="descAxisLabelFontSize" format="float" />
+        <attr name="descAxisTicksFontSize" format="float" />
+        <attr name="descTitleFontColor" format="color" />
+        <attr name="descAxisLabelFontColor" format="color" />
+        <attr name="descAxisTicksFontColor" format="color" />
+        <attr name="descXAxisLabel" format="string" />
+        <attr name="descYAxisLabel" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="BarGraph">
+        <attr name="plotBackgroundColor" format="color" />
+        <attr name="plotBarColor" format="color" />
+        <attr name="plotBarShadowColor" format="color" />
+        <attr name="plotGridColor" format="color" />
+        <attr name="plotMinimumValue" format="float" />
+        <attr name="plotMaximumValue" format="float" />
+        <attr name="plotBarSpacing" format="float" />
+        <attr name="plotBarWidth" format="float" />
+    </declare-styleable>
+</resources>

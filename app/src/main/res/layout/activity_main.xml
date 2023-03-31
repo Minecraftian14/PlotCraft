@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="116dp"
+            app:layout_constraintHorizontal_bias="0.498" />
+
+    <in.mcxiv.plotcraft.GraphAxisDescriber
+            android:layout_width="350dp"
+            android:layout_height="300dp"
+            android:id="@+id/my_plot_describer"
+            app:descBackgroundColor="#303030"
+            app:descTitle="A Demo Bar Graph"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="32dp">
+
+        <in.mcxiv.plotcraft.BarGraph
+                android:layout_width="200dp"
+                android:layout_height="300dp"
+                android:id="@+id/my_plot_view"
+                app:plotBarShadowColor="#3e3e3e"
+                app:plotBarColor="#008EFF"
+                app:plotBarWidth="2.5"
+                app:plotBarSpacing="1"
+                app:plotMinimumValue="0"
+                app:plotMaximumValue="100" />
+
+    </in.mcxiv.plotcraft.GraphAxisDescriber>
+
+
+    <Button
+            android:text="Refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/refresh_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/my_plot_describer"
+            android:layout_marginTop="32dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
